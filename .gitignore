@@ -1,0 +1,18 @@
+# Ignore compiled classes
+out/
+*.class
+
+# Ignore jars, executables, PDFs, and manifests
+*.jar
+*.exe
+*.app
+*.pdf
+manifest.txt
+
+# Ignore specific folder
+CrapsGame (Windows)/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
