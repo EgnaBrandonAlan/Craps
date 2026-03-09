@@ -7,6 +7,6 @@ A simple console-based Craps game written in Java.
 1. Compile the source files in `src/`:
    ```bash
    javac -d out src/*.java
-2. Run the compiled classes:
+2. Run the compiled classes in `out/`:
    ```bash
    java -cp out Craps
