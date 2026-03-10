@@ -20,7 +20,7 @@ A simple console-based Craps game written in Java.
    ```
 2. Copy `instructions.txt` into `out/`:
    ```bash
-   cp instructions.txt out/
+   cp src/instructions.txt out/
    ```
 4. Run the compiled classes in `out/`:
    ```bash
