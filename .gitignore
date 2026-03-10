@@ -3,6 +3,7 @@ out/
 *.class
 
 # Ignore jars, executables, PDFs, and manifests
+dist/
 *.jar
 *.exe
 *.app
