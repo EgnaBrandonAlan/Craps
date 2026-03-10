@@ -18,7 +18,11 @@ A simple console-based Craps game written in Java.
    ```bash
    javac -d out src/*.java
    ```
-2. Run the compiled classes in `out/`:
+2. Copy `instructions.txt` into `out/`:
+   ```bash
+   cp instructions.txt out/
+   ```
+4. Run the compiled classes in `out/`:
    ```bash
    java -cp out Craps
    ```
