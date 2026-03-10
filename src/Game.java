@@ -15,7 +15,7 @@ import java.util.Scanner;
  * @author Brandon Egna
  * @version 1.0
  */
-class Game {
+public class Game {
     private final Die die1;
     private final Die die2;
     private final Scanner in;
@@ -55,7 +55,7 @@ class Game {
 
     private int firstRoll() {
         int sum = rollDice();
-        System.out.printf("Your first roll is: %d\n", sum);
+        System.out.printf("Your first roll is: %d%n", sum);
         return sum;
     }
 
@@ -63,7 +63,7 @@ class Game {
         while (true) { 
             int sum = rollDice();
             
-            System.out.printf("You rolled: %d\n", sum);
+            System.out.printf("You rolled: %d%n", sum);
 
             if (sum == point) {
                 System.out.println("You rolled your point! You won!");
@@ -78,7 +78,7 @@ class Game {
     }
 
     private int rollDice() {
-        System.out.print("Press `<Enter>` to roll the dice...\n> ");
+        System.out.printf("Press `<Enter>` to roll the dice...%n> ");
         in.nextLine();
 
         die1.roll();

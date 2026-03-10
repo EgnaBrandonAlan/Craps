@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author Brandon Egna
  * @version 1.0
  */
-class Craps { 
+public class Craps { 
     public static void main(String[] args) {
         try (Scanner in = new Scanner(System.in)) {
             if (!ConsoleUtil.askYesNo(in, "Would you like to play Craps? (Y/n)", 'Y')) {

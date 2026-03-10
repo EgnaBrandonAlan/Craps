@@ -1,5 +1,8 @@
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 /**
  * ReadFile provides a utility method for reading the contents of a file.
@@ -10,7 +13,10 @@ import java.io.InputStream;
  * @author Brandon Egna
  * @version 1.0
  */
-public class ReadFile {
+public final class ReadFile {
+    private ReadFile() throws AssertionError {
+        throw new AssertionError("Utility class should not be instantiated.");
+    }
 
     /**
      * Reads the entire contents of a file as a single String.
@@ -22,9 +28,9 @@ public class ReadFile {
     public static String readFileAsString(String resourcePath) throws IOException {
         try (InputStream is = ReadFile.class.getResourceAsStream(resourcePath)) {
             if (is == null) {
-                return new String(java.nio.file.Files.readAllBytes(java.nio.file.Paths.get(resourcePath)));
+                return new String(Files.readAllBytes(Paths.get(resourcePath)), StandardCharsets.UTF_8);
             }
-            return new String(is.readAllBytes());
+            return new String(is.readAllBytes(), StandardCharsets.UTF_8);
         }
     }
 }
