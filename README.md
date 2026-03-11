@@ -2,6 +2,8 @@
 
 A simple console-based Craps game written in Java.
 
+**Requires:** Java 11 or newer.
+
 ## How to run
 
 ### Method 1
@@ -22,7 +24,19 @@ A simple console-based Craps game written in Java.
    ```bash
    cp src/instructions.txt out/
    ```
-4. Run the compiled classes in `out/`:
+3. Run the program using the compiled classes in `out/`:
    ```bash
    java -cp out Craps
+   ```
+
+### Method 3
+
+1. Follow steps 1-2 from **Method 2**
+2. Create an executable `Craps.jar`:
+   ```bash
+   jar cfe Craps.jar Craps -C out .
+   ```
+3. Run the executable `Craps.jar`:
+   ```bash
+   java -jar Craps.jar
    ```
