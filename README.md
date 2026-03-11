@@ -8,7 +8,7 @@ A simple console-based Craps game written in Java.
 
 ### Method 1
 
-1. Download `Craps_v1.0.1.jar` from the [v1.0.1](https://github.com/EgnaBrandonAlan/Craps/releases/tag/v1.0.1) release page
+1. Download the `.jar` file from the [latest release](https://github.com/EgnaBrandonAlan/Craps/releases)
 2. Run:
    ```bash
    java -jar Craps_v1.0.1.jar
